@@ -1,0 +1,174 @@
+/* https://cybmeta.com/formas-basicas-con-css-triangulos-circulos-trapecios-rectangulos-cuadrados */
+
+.forma-background {
+    background-image: url(../img/fondo-azul.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 1200px 734px;
+}
+
+/* Colores */
+$verde : #709a2a;
+$azul : #4a82bb;
+$blanco : #FFFFFF;
+$negro : #000000;
+$gris : #9E9A97;
+
+/* Fuentes */
+$titulo : 'Open Sans', sans-serif;
+$parrafo : 'Lato', sans-serif;
+
+/* Reutilizable */
+
+p, li {
+    font-family: $parrafo;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    color: $negro;
+    font-family: $titulo;
+    font-weight: 600;
+}
+
+
+/* Header */
+
+.header-principal img {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+/* Nombre */
+
+.slider-asesoria {
+    height: 500px;
+}
+
+@media (max-width: 576px) { 
+    .slider-asesoria {
+        height: 250px;
+    }
+    
+}
+
+/* Redes Sociales */
+
+.redes-sociales {
+    padding-top: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.redes-sociales ul {
+    display: flex;
+}
+
+.redes-sociales ul li {
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    display: flex;
+}
+
+@media (max-width: 575.98px) { 
+    .redes-sociales ul li {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+}
+
+.redes-sociales ul li a {
+    color: $blanco;
+    text-decoration: none;
+    border: 3px solid $verde;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: $verde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0px auto;
+    padding:3%
+}
+
+@media (max-width: 575.98px) { 
+    .redes-sociales ul li a {
+        width: 3.5rem;
+height: 3.5rem;
+    }
+}
+
+/* Lista de Servicios */
+
+.servicio {
+    padding: 1rem 0;
+    background-color: $verde;
+}
+
+.servicio h5 {
+    color: $blanco;
+    font-family: $parrafo;
+}
+
+.servicio ul {
+    margin-bottom: 0;
+}
+
+.servicio ul li {
+    color: $blanco;
+    list-style-type: circle;
+    line-height: 1.5rem;
+}
+
+.fila-uno {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.fila-dos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 767.98px) { 
+    .servicio {
+        display: flex;
+        justify-content: end;
+    }
+
+    .fila-uno,
+    .fila-dos {
+        justify-content: flex-start;
+    }
+}
+
+/* Quiene Aplican */
+
+.quienes-aplica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienes-aplica ul li {
+    list-style-type: square;
+    line-height: 1.5rem;
+}
+
+/* Boton Contacto */
+
+.boton-contacto button i {
+    padding-right: 0.5rem;
+}
+
+.btn-primary {
+    border: $azul;
+    background-color: $azul!important;
+    font-family: $parrafo;
+}
