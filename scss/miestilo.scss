@@ -1,14 +1,17 @@
+
 /* https://cybmeta.com/formas-basicas-con-css-triangulos-circulos-trapecios-rectangulos-cuadrados */
 
+/*
 .forma-background {
     background-image: url(../img/fondo-azul.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 1200px 734px;
-}
+} */
 
 /* Colores */
+
 $verde : #709a2a;
 $azul : #4a82bb;
 $blanco : #FFFFFF;
@@ -32,6 +35,60 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
+.header-principal {
+    margin-top: -994px;
+}
+
+
+    
+.forma-background{
+border-style: solid;
+border-width: 500px 0 500px 550px;
+border-color: transparent transparent transparent $azul;
+}
+
+@media (min-width: 1024px) { 
+    .forma-background {
+        border-width: 500px 0 500px 441px;
+    }
+}
+
+@media (max-width: 1040px) { 
+    .forma-background {
+        border-width: 500px 0 500px 284px;
+    }
+}
+
+@media (max-width: 754px) { 
+    .forma-background {
+        border-width: 400px 0 400px 284px;
+    }
+
+    .header-principal {
+        margin-top: -796px;
+    }
+}
+
+@media (max-width: 574px) { 
+    .forma-background {
+        border-width: 300px 0 300px 121px;
+    }
+
+    .header-principal {
+        margin-top: -591px;
+    }
+}
+
+@media (max-width: 392px) { 
+    .forma-background {
+        border-width: 200px 0 200px 66px;
+    }
+
+    .header-principal {
+        margin-top: -390px;
+    }
+}
+
 
 /* Header */
 
@@ -40,17 +97,18 @@ h1, h2, h3 {
     max-width: 100%;
 }
 
-/* Nombre */
-
-.slider-asesoria {
-    height: 500px;
+@media (max-width: 576px) { 
+    .header-principal img {
+        max-height: 70px;
+        max-width: 700%;
+    }
 }
 
-@media (max-width: 576px) { 
-    .slider-asesoria {
-        height: 250px;
+@media (max-width: 282px) { 
+    .header-principal img {
+        max-height: 50px;
+        max-width: 50%;
     }
-    
 }
 
 /* Redes Sociales */
@@ -171,4 +229,18 @@ height: 3.5rem;
     border: $azul;
     background-color: $azul!important;
     font-family: $parrafo;
+}
+
+/* Codigo QR */
+
+.coidgo-qr img {
+    width: 25%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .coidgo-qr img {
+        width: 10%;
+        height: auto;
+    }
 }

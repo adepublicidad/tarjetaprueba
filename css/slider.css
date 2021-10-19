@@ -59,23 +59,32 @@
     height: 400px;
 }
 
-/* MI ESTILO RESPONSIVE */
-
-@media (max-width: 465px) {
-    #slider {
-        height: 200px!important;
-        min-height: 200px!important;
-    }
+.slider-asesoria {
+    height: 400px;
 }
+
+/*slider-asesoria {
+    height: 400px;
+} */
+
+/* MI ESTILO RESPONSIVE */
 
 @media (max-width: 462px) {
     #container-slider {
         height: 200px;
         min-height: 200px;
     }
+
     #slider {
         height: 200px;
         min-height: 200px;
+    }
+}
+
+@media (max-width: 465px) {
+    #slider {
+        height: 200px!important;
+        min-height: 200px!important;
     }
 }
 
@@ -86,6 +95,10 @@
     .content_slider {
         height: 200px;
     }
+    .slider-asesoria {
+        height: 200px;
+    }
+
 }
 
 .content_slider div{
@@ -201,25 +214,28 @@
 
 /* Foto */
 
-.slider-asesoria img {
+.foto-agente {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-agente img {
     height: 200px;
     width: 200px;
     max-width: 100%;
-    position: absolute;
+   position: relative;
     z-index: 1;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin-top: -6.25rem;
+    padding-bottom: 1rem;
     bottom: 0;
-    top: 380px; /* Posición de foto de circulo */
 }
 
 @media (max-width: 575px) {
-    .slider-asesoria img {
-        top: -50px; /* Posición de foto de circulo */
+    .foto-agente img {
+        top: -0px; /* Posición de foto de circulo */
     }
 
-    .slider-asesoria img {
+    .foto-agente img {
         height: 150px;
     width: 150px;
     }
